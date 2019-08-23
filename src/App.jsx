@@ -6,6 +6,8 @@ import Jsx from './components/Jsx';
 import ThisDemo from './components/ThisDemo';
 import MaterialUI from './components/MaterialUI';
 import Frannie from './components/Frannie' ;
+import FunctionalComponent from './components/FunctionalComponent';
+import Cat from './Cat';
 
 
 export default class App extends Component {
@@ -16,6 +18,7 @@ export default class App extends Component {
 
   // getName();   
 
+
   // getName () {   // ES5 node.js   some mudules-> package Require.js
      
   // }
@@ -25,13 +28,28 @@ export default class App extends Component {
   }
 
 
+
+
   render() {
+  const dog = {
+      name: 'baby',
+      age: 12,
+      gender:'female',
+      address: 'montreal'
+  }
+
+  const cat = {
+    name: 'un chat',
+    age: 10,
+    gender:'male',
+    address:'canada'
+  }
 
   const welcome = 'welcome to react'
 
-  const FunctionalComponent = props => { // 静态展示型函数组件
-    return <h1>无状态组件{props.comment}{props.weather}</h1>
-  }   
+  // const FunctionalComponent = props => { // 静态展示型函数组件
+  //   return <h1>无状态组件{props.comment}{props.weather}</h1>
+  // }   
 
     return (
       <div>
@@ -49,12 +67,17 @@ export default class App extends Component {
         <MaterialUI />
         <ThisDemo /> */}
         <Frannie data='Frannie'></Frannie>
+        <FunctionalComponent 
+          data={dog}
+          name='Frannie'
+        />
         {/* <h3>-------------------------------------</h3>
         <Jsx 
           shouldDisplay={true}
           data='hands boy'
         />
         <h3>-------------------------------------</h3> */}
+        <Cat />
       </div>
     );
   }

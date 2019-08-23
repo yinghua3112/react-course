@@ -32,15 +32,23 @@ class Frannie extends React.Component{
         return `There is an ${a} and a ${b} and a ${c}!!!`;
     }
 
+    testRequest = () =>{
+        return `新建1个 无状态组件  把有状态组件里面state 值 传给无状态组件'<br/>'
+        新建1个 有状态组件'`;
+    }
+
     render(){
     return(
        <div>
            <h3>
-               {this.testA('!!!!!')}
+               {this.testA('!!!!!!!!!')}
            </h3>
           <div>
             <p>
                 {this.testABC('A','B','C')} 
+            </p>
+            <p>
+                {this.testRequest()}
             </p>
          </div> 
          <div>

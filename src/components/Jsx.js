@@ -19,7 +19,7 @@ export default class Jsx extends Component {
 
 
     render() {
-        const { shouldDisplay, data } = this.props;
+        const { shouldDisplay, } = this.props;
         const { items } = this.state;
 
         const Product = () => {
@@ -38,9 +38,11 @@ export default class Jsx extends Component {
             <div>
                 {/* conditional render using jsx */}
                 {/* {shouldDisplay && <Product />}    */}
-                {data}       
+                {/* {data}        */}
                 {this.state.name}
             </div>
         )
     }
 }
+
+
