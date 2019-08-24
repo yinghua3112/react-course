@@ -8,7 +8,7 @@ import MaterialUI from './components/MaterialUI';
 import Frannie from './components/Frannie' ;
 import FunctionalComponent from './components/FunctionalComponent';
 import Cat from './Cat';
-
+import Account from './Account';
 
 export default class App extends Component {
 

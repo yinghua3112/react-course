@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-const FunctionalComponent = (props) => {
- 
-    
 
+
+const FunctionalComponent = (props) => {
+    console.log(props);
     return ( 
         
         <div>
