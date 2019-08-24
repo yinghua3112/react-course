@@ -78,6 +78,7 @@ export default class App extends Component {
         />
         <h3>-------------------------------------</h3> */}
         <Cat />
+        <Account />
       </div>
     );
   }
