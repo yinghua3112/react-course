@@ -9,8 +9,28 @@ import Frannie from './components/Frannie' ;
 import FunctionalComponent from './components/FunctionalComponent';
 import Cat from './Cat';
 import Account from './Account';
+import Grandpa from './components/Grandpa';
+import Father from './components/Father';
+
 
 export default class App extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      family: {
+        grandson: 'Peter',
+        father: 'David',
+        grandpa: 'Jimmy'
+      },
+      dog: {
+        name: 'baby',
+        age: 12,
+        gender:'female',
+        address: 'montreal'
+      }
+    }
+  }
 
   getName = () => {  // ES6  =>  arrow function
     return <h1>welcome to react </h1>
@@ -31,12 +51,6 @@ export default class App extends Component {
 
 
   render() {
-  const dog = {
-      name: 'baby',
-      age: 12,
-      gender:'female',
-      address: 'montreal'
-  }
 
   const cat = {
     name: 'un chat',
@@ -61,24 +75,30 @@ export default class App extends Component {
         <h3>-------------------------------------</h3>
         <h1>{welcome} {this.getName()} {this.time()}</h1>
         <h3>-------------------------------------</h3>
-        <LifeCycle />
+        
         <h3>-------------------------------------</h3> */}
         {/* <SetState />
         <MaterialUI />
         <ThisDemo /> */}
-        <Frannie data='Frannie'></Frannie>
+        {/* <Frannie data='Frannie'></Frannie>
         <FunctionalComponent 
           data={dog}
           name='Frannie'
-        />
+        /> */}
         {/* <h3>-------------------------------------</h3>
         <Jsx 
           shouldDisplay={true}
           data='hands boy'
         />
         <h3>-------------------------------------</h3> */}
-        <Cat />
-        <Account />
+        {/* <Cat />
+        <Account /> */}
+        {/* <Grandpa
+        fatherState = {this.state.dog}
+        grandpaStatus={this.state.family}/> */}
+        {/* <Father fatherState = {this.state.dog}/> */}
+        <LifeCycle />
+        
       </div>
     );
   }
