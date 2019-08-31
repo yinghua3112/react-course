@@ -10,6 +10,7 @@ const Children = (props) => {
             <h1>{props.childrenStatus.grandpa}</h1>
             <h1>{props.childrenStatus.grandson}</h1>
             {console.log(props)}
+            <h1>Helllllo!!</h1>
         </div>
     );
 }
