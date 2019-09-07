@@ -94,7 +94,6 @@ export default class App extends Component {
         {/* <Cat />
         <Account /> */}
         {/* <Grandpa
-        fatherState = {this.state.dog}
         grandpaStatus={this.state.family}/> */}
         {/* <Father fatherState = {this.state.dog}/> */}
         <LifeCycle />

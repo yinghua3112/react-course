@@ -11,7 +11,7 @@ class Father extends React.Component {
         return ( 
             <div>
                 <Children childrenStatus={this.props.fatherStatus}/> 
-                {console.log(this.props)}
+                {/* {console.log(this.props)} */}
                 {/* {this.props.fatherState.name} */}
             </div>
         );

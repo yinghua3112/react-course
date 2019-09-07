@@ -12,7 +12,7 @@ class Grandpa extends React.Component {
                 <Father 
                 // childrenState = {this.props.fatherState}
                 fatherStatus ={this.props.grandpaStatus}/>
-                <h1>{this.props.fatherState.name}</h1>
+
             </div>
         );
     }
